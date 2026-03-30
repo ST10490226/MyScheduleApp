@@ -15,10 +15,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //variables//
+
 val txtView = findViewById<TextView>(R.id.txtView)
 val edtTxtTime = findViewById<EditText>(R.id.edtTxtTime)
 val btnGenerate = findViewById<Button>(R.id.btnGenerate)
 val btnClear = findViewById<Button>(R.id.btnClear)
+
+        //button to generate//
 
 btnGenerate.setOnClickListener {
  val time = edtTxtTime.text.toString()
@@ -51,14 +55,18 @@ btnGenerate.setOnClickListener {
    }
 
 }
-        
+
+        //button to clear//
+
         btnClear.setOnClickListener {
             edtTxtTime.text.clear()
             txtView.text = ""
         }
 
 
+////Reference List//
 
+////https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BCA5A47EE-F107-44AD-AB60-6E296E0B3EAE%7D&file=IMAD5112MM.docx&action=default&mobileredirect=true//
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
